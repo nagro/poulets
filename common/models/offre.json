@@ -1,0 +1,36 @@
+{
+  "name": "offre",
+  "plural": "offres",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "grosseur": {
+      "type": "string",
+      "required": true
+    },
+    "prix_u": {
+      "type": "number"
+    },
+    "qte_en_stock": {
+      "type": "number"
+    },
+    "date_publication": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

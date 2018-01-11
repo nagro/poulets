@@ -1,0 +1,44 @@
+{
+  "name": "prestation",
+  "plural": "prestations",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    },
+    "num": {
+      "type": "number",
+      "required": true
+    },
+    "qtePoulet": {
+      "type": "number"
+    },
+    "cout": {
+      "type": "number"
+    },
+    "reduction": {
+      "type": "number"
+    },
+    "datepub": {
+      "type": "date",
+      "required": true,
+      "defaultFn": "now"
+    },
+    "dureePrestation": {
+      "type": "number"
+    },
+    "Statut": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
