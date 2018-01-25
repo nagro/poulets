@@ -27,7 +27,28 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "commandeclient": {
+      "type": "hasMany",
+      "model": "commande",
+      "foreignKey": ""
+    },
+    "demandes": {
+      "type": "hasMany",
+      "model": "demande",
+      "foreignKey": "" 
+    },
+    "historiqueclient": {
+      "type": "hasOne",
+      "model": "historique",
+      "foreignKey": ""
+    },
+    "prestationsclient": {
+      "type": "hasMany",
+      "model": "prestation",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

@@ -30,7 +30,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "vendeuroffre": {
+      "type": "belongsTo",
+      "model": "vendeur",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

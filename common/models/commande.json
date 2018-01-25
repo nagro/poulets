@@ -8,7 +8,23 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "clientcommande": {
+      "type": "belongsTo",
+      "model": "client",
+      "foreignKey": ""
+    },
+    "offrescommande": {
+      "type": "hasOne",
+      "model": "offre",
+      "foreignKey": "id"
+    },
+    "prestationscommande": {
+      "type": "hasMany",
+      "model": "prestation",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
